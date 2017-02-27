@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Registration_Form</servlet-name>
+        <servlet-class>Controller.Registration_Form</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>admin_login</servlet-name>
+        <servlet-class>Controller.admin_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>payment1</servlet-name>
+        <servlet-class>Controller.payment1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>transcation</servlet-name>
+        <servlet-class>Controller.transcation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registration_Form</servlet-name>
+        <url-pattern>/Registration_Form</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>admin_login</servlet-name>
+        <url-pattern>/admin_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>payment1</servlet-name>
+        <url-pattern>/payment1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>transcation</servlet-name>
+        <url-pattern>/transcation</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
